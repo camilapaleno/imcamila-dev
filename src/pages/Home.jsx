@@ -1,16 +1,21 @@
-import React, {useState} from 'react';
-import {Helmet} from "react-helmet";
-import {Link} from 'react-router-dom';
-import useLocalStorage from 'use-local-storage';
-import '../index.css';
+import React, { useState } from "react";
+import useLocalStorage from 'use-local-storage'
+import { Helmet } from "react-helmet";
+import { Link } from 'react-router-dom';
+import { AnimatePresence, motion } from "framer-motion";
+import '../App.css';
 
-import CodeDeck from '../components/CodeDeck';
-import Foot from '../global/Foot'
+import Foot from "../global/Foot";
 
-import logo from '../img/logo-bw.png';
-import { motion } from 'framer-motion';
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import Design from "../components/Design";
+import Code from "../components/Code";
+import Ask from "../components/Ask";
 
-function Code () {
+import logo from '../img/logo.png';
+
+function Home () {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
   
@@ -90,13 +95,12 @@ function Code () {
                 </div>
             </div>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
-            <section className='portfolio-page'>
                 <div className="nav-offset"></div>
-                <div className='page-header'>
-                    <span>Source Code</span>
-                </div>
-                <CodeDeck />
-            </section>
+                <Hero />
+                <Banner />
+                <Design />
+                <Code />
+                <Ask />
             </motion.div>
             <Foot />
 
@@ -104,4 +108,4 @@ function Code () {
     )
 }
 
-export default Code;
+export default Home;

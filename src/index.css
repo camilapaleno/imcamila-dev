@@ -21,6 +21,18 @@ a {
     color: unset;
 }
 
+html {
+    background-color: var(--foot-bkg);
+}
+
+body {
+    background-color: var(--foot-bkg);
+}
+
+main {
+    background-color: var(--foot-bkg);
+}
+
 :root {
   --text: #494d5c;
   --text-hover: #000000;
@@ -74,16 +86,6 @@ a {
   --hero-img: url(/src/img/hero-dark.png);
 }
 
-
-.example-body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #a7a7a7;
-    text-align: center;
-}
 
 /*START*/
 

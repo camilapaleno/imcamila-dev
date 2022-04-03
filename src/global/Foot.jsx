@@ -8,7 +8,7 @@ export default function Foot() {
 
         <div className="foot-container">
             <div className="foot">
-                <span>Website designed in Adobe xD and created with React.js | Copyright © 2022 Camila Paleno. All rights reserved.</span>
+                <span>Website designed in Adobe Xd and created with React.js | Copyright © 2022 Camila Paleno. All rights reserved.</span>
             </div>        
 
 

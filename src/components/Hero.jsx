@@ -1,4 +1,5 @@
 import Dino from '../img/dinosaur.gif';
+import { Link } from 'react-router-dom';
 // src/components/home/Hero.js
 
 export default function Hero() {
@@ -16,7 +17,7 @@ export default function Hero() {
                 <br/><br/>
                 <span className="hero-small-text">My name is Camila. I'm a web designer and developer based in Los Angeles, CA. I specialize in creating and fine-tuning business' online presence through content creation, social media marketing, SEO, and of course, building websites. </span> 
                 <br/><br/><br/><br/>
-                <span className="ask-btn">Contact me! <i class="fa-solid fa-mug-hot"></i></span>
+                <Link to="/me" className="ask-btn">Contact me! <i class="fa-solid fa-mug-hot"></i></Link>
                 <br /><br /><br />
                 </p>
                 

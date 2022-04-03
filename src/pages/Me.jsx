@@ -1,7 +1,8 @@
 import React, {useRef} from 'react';
 import {useState} from 'react';
-import {Link} from 'react-router-dom';
-import {Helmet} from "react-helmet";
+import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+import { motion } from 'framer-motion';
 import useLocalStorage from 'use-local-storage';
 import emailjs from 'emailjs-com';
 import '../index.css';
@@ -116,6 +117,7 @@ function Me () {
 
             <div className="nav-offset"></div>
 
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
             <section className='me-page'>
                 <div className='page-header'>
                     <span>About Me</span>
@@ -136,7 +138,7 @@ function Me () {
                                 <a href='https://codepen.io/camilapaleno'><i class="fab fa-codepen"></i></a>
                                 <a href='https://github.com/camilapaleno'><i class="fab fa-github"></i></a>
                             </p>
-                            <p>You can also <a href=''>download my resume</a>.</p>
+                            <p>You can also <a href='#' target='_blank'>download my resume</a>.</p>
                         </div>
 
                     </section>
@@ -170,7 +172,7 @@ function Me () {
 
                 </div>
             </section>
-            
+            </motion.div>
 
 
             <svg xmlns="http://www.w3.org/2000/svg" className='page-curve' viewBox="0 0 1440 340" preserveAspectRatio="none" height="50%" width="100%">

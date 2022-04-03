@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Helmet} from "react-helmet";
 import {Link} from 'react-router-dom';
+import { motion } from 'framer-motion';
 import useLocalStorage from 'use-local-storage';
 import '../index.css';
 
@@ -88,6 +89,7 @@ function Portfolio () {
                     </div>
                 </div>
             </div>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
             <section className='portfolio-page'>
                 <div className="nav-offset"></div>
                 <div className='page-header'>
@@ -95,6 +97,7 @@ function Portfolio () {
                 </div>
                 <PortfolioDeck />
             </section>
+            </motion.div>
             <Foot />
         </main>
     )

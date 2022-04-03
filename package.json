@@ -1,8 +1,8 @@
 {
-  "homepage": "http://camilapaleno.github.io/imcamila-dev",
+  "homepage": "https://camilapaleno.github.io/imcamila-dev/",
   "name": "imcamila-dev",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.0",
     "@fortawesome/free-regular-svg-icons": "^6.1.0",
@@ -12,6 +12,7 @@
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^6.2.8",
     "lottie-react": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
