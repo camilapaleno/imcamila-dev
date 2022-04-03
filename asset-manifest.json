@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/imcamila-dev/static/css/main.2c517c6a.css",
-    "main.js": "/imcamila-dev/static/js/main.3a2ac76f.js",
+    "main.css": "/imcamila-dev/static/css/main.a4cc13fb.css",
+    "main.js": "/imcamila-dev/static/js/main.e88c0807.js",
     "static/media/portfolio-blue.png": "/imcamila-dev/static/media/portfolio-blue.a39e62cb603baf3b27a6.png",
     "static/media/code-totop.gif": "/imcamila-dev/static/media/code-totop.18b32e0646f4acfebd70.gif",
     "static/media/code-darkmode.gif": "/imcamila-dev/static/media/code-darkmode.bb03918d7668a7d2143b.gif",
@@ -16,14 +16,15 @@
     "static/media/test.png": "/imcamila-dev/static/media/test.33870c4ac3412bc0ba1b.png",
     "static/media/portfolio-bps.png": "/imcamila-dev/static/media/portfolio-bps.c4d55f7655ed5cf5cf8a.png",
     "static/media/design.png": "/imcamila-dev/static/media/design.f5a0e41ef8de84feae18.png",
+    "static/media/logo.png": "/imcamila-dev/static/media/logo.feeef104aa6a9216c5c1.png",
     "static/media/code.png": "/imcamila-dev/static/media/code.9dff4536f2a331799dbd.png",
     "static/media/logo-bw.png": "/imcamila-dev/static/media/logo-bw.9c40e08b2576bef749b2.png",
     "index.html": "/imcamila-dev/index.html",
-    "main.2c517c6a.css.map": "/imcamila-dev/static/css/main.2c517c6a.css.map",
-    "main.3a2ac76f.js.map": "/imcamila-dev/static/js/main.3a2ac76f.js.map"
+    "main.a4cc13fb.css.map": "/imcamila-dev/static/css/main.a4cc13fb.css.map",
+    "main.e88c0807.js.map": "/imcamila-dev/static/js/main.e88c0807.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c517c6a.css",
-    "static/js/main.3a2ac76f.js"
+    "static/css/main.a4cc13fb.css",
+    "static/js/main.e88c0807.js"
   ]
 }
