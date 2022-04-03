@@ -1,4 +1,6 @@
 // src/components/home/Design.js
+import Lottie from "lottie-react";
+import designLottie from "../anim/design-gradient.json";
 
 export default function Design() {
     return (
@@ -9,10 +11,10 @@ export default function Design() {
                 <br/><br/>
                 <span className="home-big-header">Using web design to tell a story.</span>
                 <br/><br/>
-                <span className="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu ullamcorper justo. Sed ex orci, dignissim in mi sed, finibus facilisis enim. Ut placerat, arcu ac ornare tempus, felis nibh efficitur magna, in rhoncus lacus leo eget ipsum. </span>
+                <span className="home-text">With most people living a huge part of their lives online, it's becoming increasingly important for your online presence to properly represent <em>you</em>. With the right imagery and wording you can effectively communicate your message to your desired audience.</span>
             </div>
             <div className='home-flex-item home-flex-image home-design'> 
-                
+                <Lottie animationData={designLottie} loop={true} className="home-lottie" />
             </div>
         </div>
         <div className='home-flex-section'>

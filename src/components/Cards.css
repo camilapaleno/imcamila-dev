@@ -41,10 +41,12 @@
 
 .cards ul li h5 {
     font-size: 14px;
+    color: var(--text);
 }
 
 .cards ul li p {
     font-size: 14px;
+    color: var(--text);
 }
 
 .cards ul li img{
@@ -85,3 +87,17 @@
     .cards ul li:hover .cards ul li {
         filter: grayscale(80%);
     }
+
+@media (max-width: 1080px) {
+    .cards ul li{
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cards ul li{
+        width: 100%;
+        padding: 20px;
+    }
+}

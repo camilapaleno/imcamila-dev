@@ -1,15 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import useLocalStorage from 'use-local-storage'
 import {Helmet} from "react-helmet";
+import { Link } from 'react-router-dom';
 import './App.css';
-import Nav from "./components/Nav";
-import Hero from "./components/home/Hero";
-import Banner from "./components/home/Banner";
-import Design from "./components/home/Design";
-import Code from "./components/home/Code";
-import Ask from "./components/home/Ask";
-import Foot from "./components/Foot";
 
+import Foot from "./global/Foot";
+
+import Hero from "./components/Hero";
+import Banner from "./components/Banner";
+import Design from "./components/Design";
+import Code from "./components/Code";
+import Ask from "./components/Ask";
+
+import logo from '../src/img/logo-bw.png';
 
 export default function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -18,6 +21,12 @@ export default function App() {
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+  }
+
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleToggle = () => {
+    setNavbarOpen(prev => !prev)
   }
 
   return (
@@ -42,11 +51,48 @@ export default function App() {
                 <button onClick={switchTheme}><span className="mode-icon"><i className="fas fa-moon"></i></span><span className="nav-wdgts-title"> {theme === 'light' ? 'Dark' : 'Light'} Mode</span></button>
             </div>
             <div className="hamburger">
-                <a href="#"><i className="fas fa-bars"></i></a>
+                <button onClick={handleToggle}><i className="fas fa-bars"></i></button>
             </div>                 
         </div>
       </div>
-      <Nav />
+      <div className="navigation">
+          <div className="top-bar">
+              <div className="top-bar-container">
+                  <div className="top-logo">
+                      <Link to="/"><img src={logo} /><h1>camila web dev.</h1></Link>
+                  </div>
+              </div>
+          </div>
+
+          <div className={`main-nav nav ${navbarOpen ? " show-main-nav" : ""}`}>
+              <div className="main-nav-container">
+                  <div className="nav-links">
+                      <ul>
+                          <li className="nav-link"><Link to="/"><i className="fas fa-home"></i>  Home</Link>
+                          </li>
+                          <li className="nav-link"><Link to="/portfolio"><i className="fas fa-palette"></i>  Portfolio</Link>
+                            <div className="dropdown">
+                                <div className="dropdown-triangle"></div>
+                                <span>See work I've done for past/current clients.</span>
+                            </div>
+                          </li>
+                          <li className="nav-link"><Link to="/code"><i className="fas fa-code"></i>  Source Code</Link>
+                            <div className="dropdown">
+                                <div className="dropdown-triangle"></div>
+                                <span>Code for you to use for your projects.</span>
+                            </div>
+                          </li>
+                          <li className="nav-link"><Link to="/me"><i className="fas fa-smile"></i>  Me</Link>
+                            <div className="dropdown">
+                                <div className="dropdown-triangle"></div>
+                                <span>Contact information here.</span>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
       <div className="nav-offset"></div>
       <Hero />
       <Banner />
