@@ -41,11 +41,11 @@ function Me () {
           .then(
             (result) => {
               console.log(result.text);
-              alert("SUCCESS!");
+              alert("Message sent. Thank you!");
             },
             (error) => {
               console.log(error.text);
-              alert("FAILED...", error);
+              alert("Message was not sent. Try again or send me an email instead.", error);
             }
           );
       };
