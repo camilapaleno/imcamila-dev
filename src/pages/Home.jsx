@@ -13,7 +13,7 @@ import Design from "../components/Design";
 import Code from "../components/Code";
 import Ask from "../components/Ask";
 
-import logo from '../img/logo.png';
+import logo from '../img/logo-bw.png';
 
 function Home () {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -40,7 +40,7 @@ function Home () {
                 <script src="https://kit.fontawesome.com/3d80b76294.js" crossorigin="anonymous"></script>
                 <title>Camila Paleno | Web Design and Development in Los Angeles</title>
 
-                <meta property="og:image" content="#" />
+                <meta property="og:image" content="https://imcamila.dev/social-preview.png" />
                 <meta name="description" content="Clean and modern website design and development." />
                 <meta property="og:title" content="Web Design and Development in Los Angeles"/>
                 <meta property="og:url" content="https://www.imcamila.dev" />

@@ -60,7 +60,7 @@ function Me () {
                 <script src="https://kit.fontawesome.com/3d80b76294.js" crossorigin="anonymous"></script>
                 <title>About Me | Camila Paleno | Web Design and Development in Los Angeles</title>
 
-                <meta property="og:image" content="#" />
+                <meta property="og:image" content="https://imcamila.dev/social-preview.png" />
                 <meta name="description" content="Clean and modern website design and development." />
                 <meta property="og:title" content="Web Design and Development in Los Angeles"/>
                 <meta property="og:url" content="https://www.imcamila.dev" />
@@ -134,11 +134,11 @@ function Me () {
                             <p>I graduated from UCLA in June 2021 and currently work as a frontend developer for the Neuroscience Education Institute along with freelance web development and graphic design.</p>
                             <p>This website was designed with Adobe Xd and built with React.js. Check out my Linkedin, Github, and Codepen:</p>
                             <p className='me-page-icons'>
-                                <a href='https://www.linkedin.com/in/camilapaleno/'><i class="fab fa-linkedin-in"></i></a>
-                                <a href='https://codepen.io/camilapaleno'><i class="fab fa-codepen"></i></a>
-                                <a href='https://github.com/camilapaleno'><i class="fab fa-github"></i></a>
+                                <a href='https://www.linkedin.com/in/camilapaleno/' target='_blank'><i class="fab fa-linkedin-in"></i></a>
+                                <a href='https://codepen.io/camilapaleno' target='_blank'><i class="fab fa-codepen"></i></a>
+                                <a href='https://github.com/camilapaleno' target='_blank'><i class="fab fa-github"></i></a>
                             </p>
-                            <p>You can also <a href='#' target='_blank'>download my resume</a>.</p>
+                            <p>You can also <a href='https://imcamila.dev/camilapaleno_resume.pdf' target='_blank'>download my resume</a>.</p>
                         </div>
 
                     </section>

@@ -55,7 +55,7 @@ main {
 
   --foot-bkg: #f7f3f0;
 
-  --hero-bkg: #ebe4df;
+  --hero-bkg: #f1ebec;
   --hero-img: url(/src/img/hero-light.png);
 }
 
@@ -117,14 +117,16 @@ main {
 
 .top-logo {
     padding-left: 2em;
-    padding-top: 1.3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
+    align-items: flex-start;
 }
 
 .top-logo a {
     text-decoration: none;
     display: flex;
+    align-items: flex-start;
     align-items: center;
 }
 
@@ -138,7 +140,6 @@ main {
     .top-logo img {
         height: fit-content;
         width: 40px;
-        
     }
 
     .logo-desktop {
@@ -452,7 +453,6 @@ main {
 
 .hero-text .hero-small-text{
     font-size: 16px;
-    font-weight: 500;
     letter-spacing: 1px;
 }
 
@@ -667,6 +667,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
 
 .ask-container .ask span{
     font-size: 16px;
+    color: #FFF;
 }
 
 .ask-container .ask .ask-btn {
@@ -704,8 +705,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;
-
+    padding: 10px 20px;
     background-color: var(--foot-bkg);
     z-index: 999;
 }
@@ -814,8 +814,12 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
     z-index: 1;
+}
+
+.contact-form div:nth-child(2) {
+    margin-top: 20px;
 }
 
 .contact-field-container {
@@ -832,6 +836,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
     padding: 15px;
     border: 1px solid #9e9a96;
     background-color: unset;
+    margin-bottom: 20px;
 }
 
 .contact-placeholder {
@@ -917,7 +922,7 @@ textarea.contact-field  {
     .top-logo {
         padding-left: 1.5em;
         padding-top: 1rem;
-        padding-bottom: 0.7rem;
+        padding-bottom: 1rem;
         display: flex;
     }
     
@@ -1209,6 +1214,14 @@ textarea.contact-field  {
     }
 
     .dinosaur {
+        display: none;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-image {
         display: none;
     }
 }
