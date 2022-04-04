@@ -126,7 +126,6 @@ main {
 .top-logo a {
     text-decoration: none;
     display: flex;
-    align-items: flex-start;
     align-items: center;
 }
 
@@ -138,8 +137,10 @@ main {
 }
 
     .top-logo img {
-        height: fit-content;
+        height: intrinsic;
+        height: auto;
         width: 40px;
+        display: block;
     }
 
     .logo-desktop {
