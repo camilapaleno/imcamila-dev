@@ -15,7 +15,7 @@ import Me from "./pages/Me";
 
 ReactDOM.render(
 
-  <Router basename="/imcamila-dev">
+  <Router basename={window.location.pathname || ''}>
     <App />
   </Router>,
 
