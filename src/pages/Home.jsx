@@ -38,7 +38,7 @@ function Home () {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
                 <script src="https://kit.fontawesome.com/3d80b76294.js" crossorigin="anonymous"></script>
-                <title>Source Code | Camila Paleno | Web Design and Development in Los Angeles</title>
+                <title>Camila Paleno | Web Design and Development in Los Angeles</title>
 
                 <meta property="og:image" content="#" />
                 <meta name="description" content="Clean and modern website design and development." />
