@@ -7,7 +7,7 @@ import '../App.css';
 
 import Foot from "../global/Foot";
 
-import Hero from "../components/Hero";
+import MeHero from "../components/MeHero";
 import Banner from "../components/Banner";
 import Design from "../components/Design";
 import Code from "../components/Code";
@@ -96,7 +96,7 @@ function Home () {
             </div>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
                 <div className="nav-offset"></div>
-                <Hero />
+                <MeHero />
                 <Banner />
                 <Design />
                 <Code />
