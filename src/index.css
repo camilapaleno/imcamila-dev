@@ -45,10 +45,10 @@ main {
   --home-banner-text: #74716c;
   --home-banner-bkg: #fcfcfa;
 
-  --home-code-bkg: #fcfcfa;
+  --home-code-bkg: #F4F4F1;
   --home-code-img: url(/src/img/code.png);
 
-  --home-design-bkg: #F4F4F1;
+  --home-design-bkg: #fcfcfa;
   --home-design-img: url(/src/img/design.png);
 
   --home-ask-bkg: #F4F4F1;
@@ -72,10 +72,10 @@ main {
   --home-banner-text: #e7e8ec;
   --home-banner-bkg: #25292F;
 
-  --home-code-bkg: #25292F;
+  --home-code-bkg: #202227;
   --home-code-img: url(/src/img/code.png);
 
-  --home-design-bkg: #202227;
+  --home-design-bkg: #25292F;
   --home-design-img: url(/src/img/design.png);
 
   --home-ask-bkg: #202227;
@@ -91,7 +91,7 @@ main {
 
 .navigation {
     top: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1001;
     width: 100%;    
 }
@@ -99,13 +99,11 @@ main {
 /*Top Navigation Bar - includes Logo and Navigation Widgets */
 
 .top-bar {
-    background-color: var(--nav-bkg);
-    z-index: 1001;
-    border-bottom: 1px var(--nav-border) solid;
+    z-index: 1005;
+    width: fit-content;
 }
 
 .top-bar-container {
-    max-width: 1600px;
     height: 70px;
     margin: 0 auto;
     position: relative;
@@ -212,15 +210,18 @@ main {
 
 /*Main Nagivation Bar including Dropdown*/
 .main-nav {
-    background-color: var(--nav-bkg);
     z-index: 1001; 
-    border-bottom: var(--home-design-bkg) 1px solid;
+    position: absolute;
+    top: 5px;
+    width: 100%;
 }
 
 .main-nav-container {
     padding: 0 0rem;
     margin: 0 auto;
     display: flex;
+    width: 100%;
+    justify-content: center;
     position: relative;    
     max-width: 1600px;
     z-index: 1001;
@@ -265,7 +266,7 @@ main {
 }
 
 .nav-link > a:hover {
-    background-color: var(--btn-hover);
+    background-color: var(--nav-bkg);
     border: none;
 }
 
@@ -385,62 +386,75 @@ main {
 
 /*Nav Offset*/
 .nav-offset {
-    padding-top: 134px;
+    padding-top: 65px;
 }
 
 /*MeHero Section*/
 
 .mehero-section-wrapper {
     width: 100%;
-    max-height: 700px;
+    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     background-color: var(--hero-bkg);
 }
 
 .mehero-section {
     width: 100%;
+    height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .mehero-image {
     height: 100%;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 50px 50px 0px;
 
-    background-image: url(../src/img/gradient.png);
+    background-image: url(../src/img/me-gradient.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
     .mehero-lottie {
         width: 100%;
-        max-width: 600px;
+        max-width: 650px;
         padding: 50px;
     }
 
 .mehero-text {
     height: 100%;
-    width: 50%;
-    padding: 50px;
+    width: 40%;
+    padding: 50px 0px 50px 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .mehero-text-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 50px;
 }
 
 
 .mehero-text .mehero-big-header{
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 700;
     letter-spacing: 1px;
     font-family: 'Fugaz One', Raleway, Arial, Helvetica, sans-serif;
@@ -459,7 +473,7 @@ main {
 .mehero-text .mehero-small-text{
     font-size: 18px;
     padding-bottom: 40px;
-    font-weight: 200;
+    font-weight: 400;
     color: var(--text);
 }
 
@@ -552,14 +566,14 @@ main {
 
 .banner-section {
     width: 100%;
-    padding: 30px;
+    padding: 60px 30px;
 }
 
 .banner-title {
     width: 100%;
     text-align: center;
     margin: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 
     font-size: 18px;
 }
@@ -714,7 +728,7 @@ a.banner-icon:hover {
 }
 
 .home-flex-button {
-    background-color: #fff;
+    background-color: #e7e8ec;
     color: #121418;
     padding: 15px;
     border-radius: 5px;
@@ -722,11 +736,11 @@ a.banner-icon:hover {
     text-align: center;
     display: block;
     text-decoration: none;
-    border: 2px solid #fff;
+    border: 2px solid #e7e8ec;
 }
 
 .home-flex-button:hover {
-    border: 2px solid #f5f0ec;
+    border: 2px solid #9e9a96;
 }
 
 .home-flex-icon-texts {
@@ -814,7 +828,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
 
 
 .me-page {
-    background-color: var(--home-design-bkg);
+    background-color: var(--home-code-bkg);
 }
 
 .me-page-container {
@@ -822,6 +836,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px 50px;
+    min-height: 70vh;
 }
 
 .me-page-icons i{
@@ -924,7 +939,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
     color: #9e9a96;
     left: 10px;
     top: 15px;
-    background-color: var(--home-design-bkg);
+    background-color: var(--home-code-bkg);
     padding: 0 5px;
     font-size: 14px;
     transition: .3s;
@@ -937,7 +952,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
 
 textarea.contact-field  {
     resize: none;
-    height: 250px;
+    height: 300px;
 }
 
 .contact-submit {
@@ -997,6 +1012,7 @@ textarea.contact-field  {
     .top-bar {
         position: fixed;
         width: 100%;
+        background-color: var(--nav-bkg);
     }
 
     .top-logo {
@@ -1106,7 +1122,7 @@ textarea.contact-field  {
     .nav-links {
         position: fixed;
         background-color: var(--nav-drp);
-        margin-top: 70px;
+        margin-top: 65px;
     }
 
     .nav-links > ul{
@@ -1159,10 +1175,14 @@ textarea.contact-field  {
     .mehero-section-wrapper {
         width: 100%;
         max-height: unset;
+        height: unset;
+        
     }
 
     .mehero-section {
         flex-wrap: wrap;
+        background-image: none;
+        height: unset;
     }
 
     .mehero-image {
@@ -1172,7 +1192,7 @@ textarea.contact-field  {
         height: unset;
         width: 100%;
         margin: 0 auto;
-        padding: 50px 0px 0px 0px;
+        padding: 100px 0px 0px 0px;
 
         background-position: bottom;
         background-size: cover;
@@ -1191,6 +1211,7 @@ textarea.contact-field  {
         order: 2;
 
         width: 100%;
+        height: unset;
         padding: 50px;
 
         text-align: center;

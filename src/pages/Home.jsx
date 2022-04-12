@@ -95,11 +95,11 @@ function Home () {
                 </div>
             </div>
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
-                <div className="nav-offset"></div>
                 <MeHero />
-                <Banner />
-                <Design />
+                <Banner />                
                 <Code />
+                <Design />
+
                 <Ask />
             </motion.div>
             <Foot />

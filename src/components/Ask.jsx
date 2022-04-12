@@ -8,7 +8,7 @@ export default function Ask() {
     <section className='home-text-section-wrapper' id='home-ask'>
         <div className="ask-container">
             <div className="ask">
-                <span>Want to work together? Have any questions? <Link to="/me" className="ask-btn">Contact me! <i class="fa-solid fa-mug-hot"></i></Link> </span>
+                <span>Want to work together? Have any questions?  </span><Link to="/me" className="ask-btn">Contact me! <i class="fa-solid fa-mug-hot"></i></Link>
             </div>
         </div>
     </section>

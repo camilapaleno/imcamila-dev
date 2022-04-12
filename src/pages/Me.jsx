@@ -115,15 +115,17 @@ function Me () {
                 </div>
             </div>
 
-            <div className="nav-offset"></div>
+            
 
             <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
             <section className='me-page'>
+                <div className="nav-offset"></div>
                 <div className='page-header'>
                     <span>About Me</span>
                 </div>
 
                 <div className='me-page-container'>
+                    
 
                     <section className='about-container'>
                     

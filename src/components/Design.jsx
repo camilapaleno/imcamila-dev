@@ -6,6 +6,8 @@ export default function Design() {
     return (
     <section className='home-flex-section-wrapper' id='home-design'>
         <div className='home-flex-section'>
+            
+            
             <div className='home-flex-item home-flex-text'>
                 <span className="home-small-header">UI/UX Design</span>
                 <br/><br/>

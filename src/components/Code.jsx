@@ -15,7 +15,9 @@ export default function Code() {
                 <span className="home-big-header">Efficient, contemporary, and clean code.</span>
                 <br/><br/>
                 <span className="home-text">Web development has come a long way. It's crucial to keep up with the <em>current</em> best practices and trends in development.</span>
-            </div>
+            </div>            
+
+
             <div className='home-flex-section'>
                 <div className='home-flex-item home-flex-icon-texts'>
                     <span><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span>
