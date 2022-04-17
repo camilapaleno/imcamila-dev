@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompassDrafting, faLaptopCode, faMugHot, faObjectGroup, faRocket } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 export default function Banner() {
 
@@ -30,7 +30,7 @@ export default function Banner() {
             <div className='banner-icons'>
                 <a href='#home-design' className='banner-icon'>
                     <i
-                        className={hoveredUXUI ? 'fa-solid fa-object-group fa-bounce' : 'fa-solid fa-object-group'}
+                        className={hoveredUXUI ? 'fa-solid fa-object-group' : 'fa-solid fa-object-group'}
                         onMouseEnter={toggleHoverUXUI}
                         onMouseLeave={toggleHoverUXUI}
                     >
@@ -39,7 +39,7 @@ export default function Banner() {
                 </a>
                 <a href='#home-design' className='banner-icon'>
                 <i
-                        className={hoveredGraphic ? 'fa-solid fa-compass-drafting fa-bounce' : 'fa-solid fa-compass-drafting'}
+                        className={hoveredGraphic ? 'fa-solid fa-compass-drafting' : 'fa-solid fa-compass-drafting'}
                         onMouseEnter={toggleHoverGraphic}
                         onMouseLeave={toggleHoverGraphic}
                     >
@@ -57,22 +57,22 @@ export default function Banner() {
                 </a>
                 <a href='#home-code' className='banner-icon'>
                     <i
-                        className={hoveredDev ? 'fa-solid fa-laptop-code fa-bounce' : 'fa-solid fa-laptop-code'}
+                        className={hoveredDev ? 'fa-solid fa-laptop-code' : 'fa-solid fa-laptop-code'}
                         onMouseEnter={toggleHoverDev}
                         onMouseLeave={toggleHoverDev}
                     >
                     </i>
                     <span>Frontend Development</span>
                 </a>
-                <a href='#' className='banner-icon'>
+                <Link to="/me" className='banner-icon'>
                     <i
-                        className={hoveredL ? 'fa-solid fa-mug-hot fa-bounce' : 'fa-solid fa-mug-hot'}
+                        className={hoveredL ? 'fa-solid fa-mug-hot' : 'fa-solid fa-mug-hot'}
                         onMouseEnter={toggleHoverL}
                         onMouseLeave={toggleHoverL}
                     >
                     </i>
                     <span>Listening</span>
-                </a>
+                </Link>
             </div>
         </div>
     </section>

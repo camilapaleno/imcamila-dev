@@ -407,6 +407,13 @@ main {
     justify-content: center;
     align-items: center;
 
+
+    background-image: url(../src/img/topgrad.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;    
+
 }
 
 .mehero-image {
@@ -415,11 +422,6 @@ main {
     margin: 0 auto;
     padding: 50px 50px 50px 0px;
 
-    background-image: url(../src/img/me-gradient.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
 
     display: flex;
     justify-content: center;
@@ -559,23 +561,35 @@ main {
 
 /*Home Banner Icons*/
 .banner-section-wrapper {
+    margin-top: -170px;
     width: 100%;
     color: var(--home-banner-text);
-    background-color: var(--home-banner-bkg);
+    background-color: var(--hero-bkg);
+
+    background-image: url(../src/img/bottomgrad.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;   
 }
 
 .banner-section {
+
     width: 100%;
-    padding: 60px 30px;
+    padding: 200px 60px 60px 60px;
 }
 
 .banner-title {
+    
     width: 100%;
     text-align: center;
     margin: 10px;
     padding-bottom: 50px;
 
     font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #FFF;
 }
 
 .banner-icons {
@@ -592,18 +606,21 @@ a.banner-icon {
     padding-bottom: 10px;
     width: 180px;
     text-decoration: none;
+    color:#FFF;
 }
 
 a.banner-icon:hover {
-    color: var(--home-banner-text);
     text-decoration: none;
 }
 
 .banner-icon i {
-    font-size: 30px;
+    font-size: 50px;
     padding-bottom: 20px;
     display: block;
-    --fa-animation-iteration-count: 1;
+}
+
+.banner-icon i:hover {
+    
 }
 
 .banner-icon .fa-rocket {
@@ -614,6 +631,7 @@ a.banner-icon:hover {
 /*Home Flex Sections*/
 .home-flex-section-wrapper  {
     width: 100%;
+
     color: var(--text);
 }
 
