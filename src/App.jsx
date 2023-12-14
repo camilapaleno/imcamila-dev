@@ -30,10 +30,10 @@ export default function App() {
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/code" element={<Code />} />
-        <Route path="/me" element={<Me />} />
+        <Route path="/imcamila-dev/" element={<Home />} />
+        <Route path="/imcamila-dev/portfolio" element={<Portfolio />} />
+        <Route path="/imcamila-dev/code" element={<Code />} />
+        <Route path="/imcamila-dev/me" element={<Me />} />
       </Routes>
     </AnimatePresence>
   );
